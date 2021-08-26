@@ -1,0 +1,88 @@
+@font-face { font-family: myCustomFont; src: local('happyBirthday.ttf'); } 
+
+body {
+    margin: 0;
+    background: #020202;
+    /* cursor: crosshair; */
+    /* overflow: hidden; */
+    font-family: myCustomFont;
+    margin: 0 20px 100px 20px;
+  }
+  canvas{display:block}
+  h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-user-select: none;
+    user-select: none;
+    text-align: center;
+  }
+  
+  h2 {
+    color:#FFF;
+  }
+
+  .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .footer-content {
+      color: #FFF;
+  }
+
+  .footer-content > .quote {
+    font-style: italic;
+  }
+
+  #buttonprove:hover {
+    text-decoration: underline;
+    color:red;
+  }
+
+  #buttonprove {
+      cursor: pointer;
+  }
+
+  .last-one {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #giftbutton:hover {
+    transform: scale(2);
+    cursor: pointer;
+  }
+
+  #jumpscare {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-top: -250px; /* Half the height */
+    margin-left: -250px; /* Half the width */
+    transform: scale(0);
+    visibility: hidden;
+    /* background: rgba(0, 0, 0, 0.8); */
+    transition: transform ease-out 300ms;
+    /* animation: popUp 500ms ease-in ;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 2; */
+  }
+
+
+  /* @keyframes popUp {
+    from {transform: scale(0);}
+    to {transform: scale(3);}
+  } */
